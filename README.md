@@ -166,7 +166,7 @@ cd WeChatEnhancer_iOS_UI
 ## 联系方式
 
 如有问题或建议，请通过以下方式联系：
-- GitHub Issues: [项目Issues页面](https://github.com/yourusername/WeChatEnhancer_iOS_UI/issues)
+- GitHub Issues: [项目Issues页面](https://github.com/Herobrineee/-WeChatEnhancer_iOS_UI/issues)
 - Email: 3489134023@qq.com
 
 ---
