@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">微信增强模块</string>
+    
+    <!-- 主界面 -->
+    <string name="title_wechat_enhancer">微信增强模块</string>
+    <string name="subtitle_features">iOS风格界面 | 低占用率 | 功能自由开关</string>
+    <string name="status_title">当前状态</string>
+    <string name="status_active">模块已激活</string>
+    <string name="status_inactive">模块未激活</string>
+    
+    <!-- 功能名称 -->
+    <string name="function_moments_anti_recall">朋友圈防撤回</string>
+    <string name="function_moments_ad_removal">朋友圈去广告</string>
+    <string name="function_message_anti_recall">消息防撤回</string>
+    <string name="function_auto_original_image">自动原图</string>
+    
+    <!-- 状态文本 -->
+    <string name="status_enabled">已启用</string>
+    <string name="status_disabled">已禁用</string>
+    
+    <!-- 按钮文本 -->
+    <string name="button_settings">设置</string>
+    <string name="button_test">测试功能</string>
+    <string name="button_enable_module">启用模块</string>
+    <string name="button_disable_module">停用模块</string>
+    <string name="button_back">返回</string>
+    
+    <!-- 设置界面 -->
+    <string name="settings_title">设置</string>
+    <string name="setting_performance_mode">性能模式</string>
+    <string name="setting_performance_desc">降低动画效果，减少资源占用</string>
+    <string name="setting_animation">启用动画</string>
+    <string name="setting_animation_desc">启用iOS风格的过渡动画</string>
+    <string name="setting_auto_update">自动检查更新</string>
+    <string name="setting_auto_update_desc">自动检查新版本</string>
+    
+    <!-- 关于 -->
+    <string name="about_title">关于</string>
+    <string name="about_version">版本 1.0.0</string>
+    <string name="about_description">微信增强模块 - iOS风格界面\n低占用率设计\n支持功能自由开关</string>
+    
+    <!-- 测试界面 -->
+    <string name="test_title">功能测试</string>
+    <string name="test_moments_anti_recall">朋友圈防撤回测试</string>
+    <string name="test_moments_anti_recall_desc">测试朋友圈防撤回功能是否正常工作</string>
+    <string name="test_message_anti_recall">消息防撤回测试</string>
+    <string name="test_message_anti_recall_desc">测试消息防撤回功能是否正常工作</string>
+    <string name="test_ad_removal">去广告测试</string>
+    <string name="test_ad_removal_desc">测试朋友圈去广告功能是否正常工作</string>
+    
+    <!-- 其他 -->
+    <string name="back_to_main">返回主界面</string>
+    <string name="loading">加载中...</string>
+    <string name="error">错误</string>
+    <string name="success">成功</string>
+    <string name="cancel">取消</string>
+    <string name="ok">确定</string>
+</resources>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme. -->
+    <style name="BaseAppTheme_iOS" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/ios_primary</item>
+        <item name="colorPrimaryVariant">@color/ios_secondary</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/ios_secondary</item>
+        <item name="colorSecondaryVariant">@color/ios_purple</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="android:statusBarColor">@color/ios_status_bar</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:navigationBarColor">@color/ios_background_primary</item>
+        
+        <!-- iOS风格按钮 -->
+        <item name="materialButtonStyle">@style/Widget.App.Button.iOS</item>
+        <item name="buttonStyle">@style/Widget.App.Button.iOS</item>
+        
+        <!-- iOS风格卡片 -->
+        <item name="cardViewStyle">@style/Widget.App.Card.iOS</item>
+        
+        <!-- iOS风格开关 -->
+        <item name="switchStyle">@style/Widget.App.Switch.iOS</item>
+        
+        <!-- 文本样式 -->
+        <item name="android:textColor">@color/ios_text_primary</item>
+        <item name="android:textColorSecondary">@color/ios_text_secondary</item>
+        <item name="android:textColorTertiary">@color/ios_text_tertiary</item>
+        
+        <!-- 背景 -->
+        <item name="android:windowBackground">@color/ios_background_secondary</item>
+        <item name="android:colorBackground">@color/ios_background_secondary</item>
+        
+        <!-- 圆角 -->
+        <item name="cornerRadius">12dp</item>
+        
+        <!-- 动画 -->
+        <item name="android:windowAnimationStyle">@style/WindowAnimation.iOS</item>
+    </style>
+
+    <style name="AppTheme_iOS" parent="BaseAppTheme_iOS">
+        <!-- 完全透明状态栏（iOS风格） -->
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:fitsSystemWindows">true</item>
+    </style>
+
+    <!-- iOS风格按钮 -->
+    <style name="Widget.App.Button.iOS" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/ios_button_primary</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="cornerRadius">10dp</item>
+        <item name="android:minHeight">44dp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:elevation">0dp</item>
+        <item name="android:stateListAnimator">@</item>
+        <item name="rippleColor">@color/white</item>
+    </style>
+
+    <!-- iOS风格卡片 -->
+    <style name="Widget.App.Card.iOS" parent="Widget.MaterialComponents.CardView">
+        <item name="cardBackgroundColor">@color/ios_card_background</item>
+        <item name="cardCornerRadius">12dp</item>
+        <item name="cardElevation">0dp</item>
+        <item name="strokeColor">@color/ios_card_border</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+
+    <!-- iOS风格开关 -->
+    <style name="Widget.App.Switch.iOS" parent="Widget.AppCompat.CompoundButton.Switch">
+        <item name="trackTint">@color/ios_switch_track</item>
+        <item name="trackTintMode">multiply</item>
+        <item name="thumbTint">@color/ios_switch_thumb</item>
+        <item name="android:minWidth">51dp</item>
+        <item name="android:minHeight">31dp</item>
+    </style>
+
+    <!-- iOS风格文本 -->
+    <style name="Text.iOS.Title" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="android:textColor">@color/ios_text_primary</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:letterSpacing">-0.02</item>
+    </style>
+
+    <style name="Text.iOS.Subtitle" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="android:textColor">@color/ios_text_secondary</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:letterSpacing">-0.01</item>
+    </style>
+
+    <style name="Text.iOS.Body" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:textColor">@color/ios_text_primary</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:lineHeight">22sp</item>
+    </style>
+
+    <style name="Text.iOS.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textColor">@color/ios_text_tertiary</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:letterSpacing">-0.01</item>
+    </style>
+
+    <!-- iOS风格窗口动画 -->
+    <style name="WindowAnimation.iOS" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_left</item>
+    </style>
+</resources>
