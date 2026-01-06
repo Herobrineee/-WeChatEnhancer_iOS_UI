@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ios_background_secondary"
+    android:fitsSystemWindows="true"
+    tools:context=".SettingsActivity">
+
+    <!-- 标题 -->
+    <TextView
+        android:id="@+id/settings_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="16dp"
+        android:text="设置"
+        android:textColor="@color/ios_text_primary"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-medium"
+        android:letterSpacing="-0.02"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- 设置项容器 -->
+    <LinearLayout
+        android:id="@+id/settings_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/settings_title">
+
+        <!-- 性能模式设置 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/performance_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            app:cardBackgroundColor="@color/ios_card_background"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="0dp"
+            app:strokeColor="@color/ios_card_border"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <!-- 设置标题 -->
+                    <TextView
+                        android:id="@+id/setting_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="性能模式"
+                        android:textColor="@color/ios_text_primary"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:fontFamily="sans-serif-medium" />
+
+                    <!-- 设置描述 -->
+                    <TextView
+                        android:id="@+id/setting_description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="降低动画效果，减少资源占用"
+                        android:textColor="@color/ios_text_secondary"
+                        android:textSize="13sp"
+                        android:fontFamily="sans-serif" />
+                </LinearLayout>
+
+                <!-- 开关 -->
+                <Switch
+                    android:id="@+id/setting_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:minWidth="51dp"
+                    android:minHeight="31dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- 动画设置 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/animation_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            app:cardBackgroundColor="@color/ios_card_background"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="0dp"
+            app:strokeColor="@color/ios_card_border"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/setting_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="启用动画"
+                        android:textColor="@color/ios_text_primary"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:fontFamily="sans-serif-medium" />
+
+                    <TextView
+                        android:id="@+id/setting_description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="启用iOS风格的过渡动画"
+                        android:textColor="@color/ios_text_secondary"
+                        android:textSize="13sp"
+                        android:fontFamily="sans-serif" />
+                </LinearLayout>
+
+                <Switch
+                    android:id="@+id/setting_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:minWidth="51dp"
+                    android:minHeight="31dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- 自动更新设置 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/update_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            app:cardBackgroundColor="@color/ios_card_background"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="0dp"
+            app:strokeColor="@color/ios_card_border"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/setting_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="自动检查更新"
+                        android:textColor="@color/ios_text_primary"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:fontFamily="sans-serif-medium" />
+
+                    <TextView
+                        android:id="@+id/setting_description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="自动检查新版本"
+                        android:textColor="@color/ios_text_secondary"
+                        android:textSize="13sp"
+                        android:fontFamily="sans-serif" />
+                </LinearLayout>
+
+                <Switch
+                    android:id="@+id/setting_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:minWidth="51dp"
+                    android:minHeight="31dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- 关于卡片 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/about_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            app:cardBackgroundColor="@color/ios_card_background"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="0dp"
+            app:strokeColor="@color/ios_card_border"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- 关于标题 -->
+                <TextView
+                    android:id="@+id/about_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="关于"
+                    android:textColor="@color/ios_text_primary"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-medium" />
+
+                <!-- 版本信息 -->
+                <TextView
+                    android:id="@+id/about_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="版本 1.0.0"
+                    android:textColor="@color/ios_text_secondary"
+                    android:textSize="15sp"
+                    android:fontFamily="sans-serif" />
+
+                <!-- 描述 -->
+                <TextView
+                    android:id="@+id/about_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="微信增强模块 - iOS风格界面\n低占用率设计\n支持功能自由开关"
+                    android:textColor="@color/ios_text_tertiary"
+                    android:textSize="13sp"
+                    android:fontFamily="sans-serif"
+                    android:lineHeight="18sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- 返回按钮 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/back_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/ios_card_background"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="0dp"
+            app:strokeColor="@color/ios_card_border"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/back_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="返回主界面"
+                    android:textColor="@color/ios_primary"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-medium" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
