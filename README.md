@@ -22,58 +22,7 @@
 - 消息防撤回
 - 自动原图发送
 
-## 项目结构
-
-```
-WeChatEnhancer_iOS_UI/
-├── app/
-│   ├── src/main/java/com/example/wechat_enhancer/
-│   │   ├── MainActivity.java          # 主界面
-│   │   ├── SettingsActivity.java      # 设置界面
-│   │   ├── TestActivity.java          # 测试界面
-│   │   ├── ConfigManager.java         # 配置管理
-│   │   ├── PerformanceOptimizer.java  # 性能优化
-│   │   └── MainHook.java              # Hook框架
-│   ├── src/main/res/
-│   │   ├── layout/                    # 布局文件
-│   │   ├── values/                    # 资源文件
-│   │   ├── anim/                      # 动画文件
-│   │   └── drawable/                  # 图标文件
-│   └── build.gradle                   # 模块构建配置
-├── .github/workflows/
-│   └── android.yml                    # GitHub Actions配置
-├── build.gradle                       # 项目构建配置
-├── settings.gradle                    # 项目设置
-└── README.md                          # 项目说明
-```
-
-## 快速开始
-
-### 1. 本地构建
-
-```bash
-# 克隆项目
-git clone https://github.com/yourusername/WeChatEnhancer_iOS_UI.git
-
-# 进入项目目录
-cd WeChatEnhancer_iOS_UI
-
-# 构建APK
-./gradlew assembleDebug
-
-# 构建发布版APK
-./gradlew assembleRelease
-```
-
-### 2. GitHub Actions自动构建
-
-项目已配置GitHub Actions，每次推送到main/master分支或手动触发时，会自动构建APK。
-
-构建完成后，可以在Actions页面下载：
-1. `wechat-enhancer-apk` - Debug版本APK
-2. `wechat-enhancer-release-apk` - Release版本APK
-
-### 3. 安装使用
+### 安装使用
 
 1. 下载构建好的APK文件
 2. 在Android设备上安装
